@@ -15,7 +15,7 @@ const ale = {
        'https://www.linkedin.com/in/alejandra-adrian-tejada-698562111/',
     portfolio: '',
     github: 'aqp201717679@github.io',
-    photo: alejandra,
+    photo:' alejandra',
     badges: '',
     html:
        '[https://aqp20171679.github.io/trello-laboratoria/ ,\nhttps://aqp20171679.github.io/Proyecto-Final-Sprint-1/,\nhttps://aqp20171679.github.io/memorize-maze/,\nhttps://aqp20171679.github.io/DOM2-Caballos/,\nhttps://aqp20171679.github.io/Maze-Event/ ]',

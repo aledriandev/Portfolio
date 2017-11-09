@@ -1,5 +1,8 @@
 body {
   box-sizing: border-box;
-  font-family: arial; }
+  font-family: arial;
+  background-image: url(../girl-tech.gif);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=input.css.map */
