@@ -1,0 +1,392 @@
+@import '_mixin';
+
+.skills-end{
+    height: 750px;
+    @extend .form-v;
+    background: $principal;
+    @include respond-to($mobileMax) {
+        height: 1100px;
+    }
+    @include respond-to($laptopMin) {
+        height: 650px;
+    }
+    &:after, &:before{
+        background: $principal;
+    }
+    &:before{
+        bottom: -48px;
+        left: 0;
+        transform: skewY(-8deg);
+        height:850px;
+        z-index: 1;
+        @include respond-to($mobileMax) {
+            height: 1200px;
+        }
+        @include respond-to($laptopMin) {
+            height: 750px;
+        }
+    }
+    &:after{
+        height: 850px;
+        bottom: -48px;
+        z-index: 1;
+        right: 0;
+        transform: skewY(8deg);
+        @include respond-to($mobileMax) {
+            height: 1200px;
+        }
+        @include respond-to($laptopMin) {
+            height: 750px;
+        }
+    }
+}
+
+
+#SkillBox {
+	font-size: 20px;
+	font-family: $font_Quick;
+	width: 100%;
+	height: auto;
+	// margin: 40px auto;
+    // background-color: $white;
+    z-index: 10000;
+    position: absolute;
+    // left: 10%;
+    top: -35px;
+	//border: 1px solid $color_celeste_approx;
+	padding: 30px;
+}
+.SkillBar {
+    width: 75%;
+	height: 25px;
+	position: relative;
+	background: $barBG;
+    // margin: 20px auto;
+    // float: left;
+    top: 4px;
+    
+}
+
+.skill{
+    width: 33%;
+    height: 160px;
+    margin: 15px 0;
+    float: left;
+    text-align: center;
+    @include respond-to($mobileMax) {
+        width: 50%;
+    }
+    
+    @include respond-to($tabletMin) {
+        width: 33%;
+    }
+    @include respond-to($laptopMin) {
+        width: 25%;
+    }
+}
+
+.img-skill{
+    width: 50%;
+    // float: left;
+    -webkit-filter: brightness(50%);
+    filter: brightness(80%);
+}
+
+#Skill-HTML {
+	width: $Shtml;
+	animation: Animate-HTML 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $html;
+}
+@keyframes Animate-HTML {
+	from { width: 10px;	}
+	to { width: $Shtml;	}
+}
+@-webkit-keyframes Animate-HTML {
+	from { width: 10px;	}
+	to { width: $Shtml;	}
+}
+@-moz-keyframes Animate-HTML {
+	from { width: 10px;	}
+	to { width: $Shtml;	}
+}
+@-o-keyframes Animate-HTML {
+	from { width: 10px;	}
+	to { width: $Shtml;	}
+}
+
+
+#Skill-css {
+	width: $Scss;
+	animation: Animate-css 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $css;
+}
+@keyframes Animate-css {
+	from { width: 10px;	}
+	to { width: $Scss;	}
+}
+@-webkit-keyframes Animate-css {
+	from { width: 10px;	}
+	to { width: $Scss;	}
+}
+@-moz-keyframes Animate-css {
+	from { width: 10px;	}
+	to { width: $Scss;	}
+}
+@-o-keyframes Animate-css {
+	from { width: 10px;	}
+	to { width: $Scss;	}
+}
+
+#Skill-js {
+	width: $Sjs;
+	animation: Animate-js 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $js;
+}
+@keyframes Animate-js {
+	from { width: 10px;	}
+	to { width: $Sjs;	}
+}
+@-webkit-keyframes Animate-js {
+	from { width: 10px;	}
+	to { width: $Sjs;	}
+}
+@-moz-keyframes Animate-js {
+	from { width: 10px;	}
+	to { width: $Sjs;	}
+}
+@-o-keyframes Animate-js {
+	from { width: 10px;	}
+	to { width: $Sjs;	}
+}
+
+#Skill-jQuery {
+	width: $Sjs;
+	animation: Animate-jQuery 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $jQuery;
+}
+@keyframes Animate-jQuery {
+	from { width: 10px;	}
+	to { width: $SjQuery;	}
+}
+@-webkit-keyframes Animate-jQuery {
+	from { width: 10px;	}
+	to { width: $SjQuery;	}
+}
+@-moz-keyframes Animate-jQuery {
+	from { width: 10px;	}
+	to { width: $SjQuery;	}
+}
+@-o-keyframes Animate-jQuery {
+	from { width: 10px;	}
+	to { width: $SjQuery;	}
+}
+
+#Skill-Bootstrap {
+	width: $Sbootstrap;
+	animation: Animate-bootstrap 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $bootstrap;
+}
+@keyframes Animate-bootstrap {
+	from { width: 10px;	}
+	to { width: $Sbootstrap;	}
+}
+@-webkit-keyframes Animate-bootstrap {
+	from { width: 10px;	}
+	to { width: $Sbootstrap;	}
+}
+@-moz-keyframes Animate-bootstrap {
+	from { width: 10px;	}
+	to { width: $Sbootstrap;	}
+}
+@-o-keyframes Animate-bootstrap {
+	from { width: 10px;	}
+	to { width: $Sbootstrap;	}
+}
+
+#Skill-Sass {
+	width: $Ssass;
+	animation: Animate-sass 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $sass;
+}
+@keyframes Animate-sass {
+	from { width: 10px;	}
+	to { width: $Ssass;	}
+}
+@-webkit-keyframes Animate-sass {
+	from { width: 10px;	}
+	to { width: $Ssass;	}
+}
+@-moz-keyframes Animate-sass {
+	from { width: 10px;	}
+	to { width: $Ssass;	}
+}
+@-o-keyframes Animate-sass {
+	from { width: 10px;	}
+	to { width: $Ssass;	}
+}
+
+#Skill-Redux {
+	width: $Sredux;
+	animation: Animate-redux 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $redux;
+}
+@keyframes Animate-redux {
+	from { width: 10px;	}
+	to { width: $Sredux; }
+}
+@-webkit-keyframes Animate-redux {
+	from { width: 10px;	}
+	to { width: $Sredux; }
+}
+@-moz-keyframes Animate-redux {
+	from { width: 10px;	}
+	to { width: $Sredux; }
+}
+@-o-keyframes Animate-redux {
+	from { width: 10px;	}
+	to { width: $Sredux; }
+}
+
+#Skill-React {
+	width: $Sreact;
+	animation: Animate-react 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $react;
+}
+@keyframes Animate-react {
+	from { width: 10px;	}
+	to { width: $Sreact;}
+}
+@-webkit-keyframes Animate-react {
+	from { width: 10px;	}
+	to { width: $Sreact;}
+}
+@-moz-keyframes Animate-react {
+	from { width: 10px;	}
+	to { width: $Sreact;}
+}
+@-o-keyframes Animate-react {
+	from { width: 10px;	}
+	to { width: $Sreact;}
+}
+
+#Skill-Firebase {
+	width: $Sfirebase;
+	animation: Animate-firebase 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $firebase;
+}
+@keyframes Animate-firebase {
+	from { width: 10px;	}
+	to { width: $Sfirebase;	}
+}
+@-webkit-keyframes Animate-firebase {
+	from { width: 10px;	}
+	to { width: $Sfirebase;	}
+}
+@-moz-keyframes Animate-firebase {
+	from { width: 10px;	}
+	to { width: $Sfirebase;	}
+}
+@-o-keyframes Animate-firebase {
+	from { width: 10px;	}
+	to { width: $Sfirebase;	}
+}
+
+#Skill-Git {
+	width: $Sgit;
+	animation: Animate-git 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $git;
+}
+@keyframes Animate-git {
+	from { width: 10px;	}
+	to { width: $Sgit;	}
+}
+@-webkit-keyframes Animate-git {
+	from { width: 10px;	}
+	to { width: $Sgit;	}
+}
+@-moz-keyframes Animate-git {
+	from { width: 10px;	}
+	to { width: $Sgit;	}
+}
+@-o-keyframes Animate-git {
+	from { width: 10px;	}
+	to { width: $Sgit;	}
+}
+
+#Skill-Trello {
+	width: $Strello;
+	animation: Animate-trello 4s;
+	height: 25px;
+	position: absolute;
+	background-color: $trello;
+}
+@keyframes Animate-trello {
+	from { width: 10px;	}
+	to { width: $Strello;	}
+}
+@-webkit-keyframes Animate-trello {
+	from { width: 10px;	}
+	to { width: $Strello;	}
+}
+@-moz-keyframes Animate-trello {
+	from { width: 10px;	}
+	to { width: $Strello;	}
+}
+@-o-keyframes Animate-trello {
+	from { width: 10px;	}
+	to { width: $Strello;	}
+}
+
+.Skill-Area {
+	z-index: 1;
+	float: left;
+	//position: absolute;
+	margin-top: 0px;
+	margin-left: 15px;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: none;
+	color: $white;
+	//font-family: Lato-Regular, sans-serif;
+	font-size: 18px;
+}
+
+.skills-end .title-parts{
+    top: -92px;
+}
+
+.portfolio .title-parts{
+    top: 80px;
+}
+
+.contact-me-data{
+    width:90%;
+    position: absolute;
+    top: 150px;
+    right: 5%;
+}
+
+.contact-me .title-parts{
+    top: 80px;
+    right: 5%;
+    // text-align: right;
+}

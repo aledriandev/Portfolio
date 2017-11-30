@@ -1,0 +1,88 @@
+@import '_mixin';
+
+.myself{
+    width: 100%;
+    background: url(../images/ale/ale81.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    color: $gray;
+    margin: 0;
+}
+
+.whoIam{
+	padding-top: 22vh;
+    width: 90%;
+    margin: 0;
+    padding-left: 5%; 
+    text-align: left;
+    font-family: $font_Raleway;
+    h1{
+		font-size: 350%;
+		font-weight: 700;
+    }
+    h2{
+		font-weight: 600;
+        font-size: 280%;
+	}
+	
+	@include respond-to($mobileMax) {
+		padding-top: 22vh;
+		h1{
+			font-size: 270%;
+		}
+		h2{
+			font-size: 230%;
+		}
+	}
+	@include respond-to($laptopMin) {		
+		h1{
+			font-size: 450%;
+		}
+		h2{
+			font-size: 260%;
+		}
+	}
+}
+
+.whatIdo {
+	font-family: $font_Raleway;
+	color: $letter_tag;
+	position: relative;
+	left: 2%;
+}
+.whatIdo-visible {
+	float: left;
+    position: relative;
+    h2{
+        margin-top: 0;
+        color: $principal2;
+    }
+}
+
+.meet-me {
+    position: absolute;
+	left: 50%;
+	margin-left: -22.5px;
+    bottom: 20px;
+    width: 45px;
+
+    font-size: 40px;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(45deg, $principal, $principal , $principal);
+    background-size: 300% 300%;
+    // box-shadow: 0.5vw 0.5vw 0 $principal2_dif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 2px;
+    
+    &:hover {
+      font-size: 50px;
+      width: 55px;
+    //   box-shadow: 0.2vw 0.2vw 0 $principal2_dif;
+    }
+}

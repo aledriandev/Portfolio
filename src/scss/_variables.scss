@@ -1,6 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Raleway:400,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Andika');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Ubuntu:400,700|Vollkorn:400,700,900,900i');
+
+
+//colors
+$principal3: #34495e;
+$principal2: #10457a;
+$letter_tag: #ecf0f1;
+$tags: #ba195f;
 $fontTitle: arial;
 $fontSub: arial;
-$white: #FAFAFA;
+$light: #FAFAFA;
 $black:rgb(0, 0, 0);
 $uppercase: uppercase;
-$principal: #ef466a
+$principal: #b31328;
+$principal2_dif: #597da0;
+
+$gray: #27231f;
+
+//fonts
+$font_0: Muli;
+$font_Quick: Quicksand;
+$font_Sedg: Sedgwick Ave;
+$font_NotoSans: Noto Sans;
+$font_NotoSerif: Noto Serif;
+$font_Merri: Merriweater;
+$font_Raleway: Raleway;
+$font_Barlow: Barlow;
+$font_Andika: Andika;
+$font_Ubuntu: Ubuntu ;
+
+%extend_1 {
+	color: $principal2;
+	font-size: 880%;
+	// animation: 1s linear 0s normal none infinite opacity;
+	font-family: $font_NotoSans;
+}
+
+//MEDIA-QUERIES
+$fullHd: "min-width: 1400px";
+$desktopMin: "min-width: 1200px";
+$desktopMax: "max-width: 1399px";
+$laptopMin: "min-width:992px";
+$laptopMax: "max-width:1199px";
+$tabletMin: "min-width: 768px";
+$mobileMax: "max-width: 768px";
+$mobileMin: "min-width: 240px";
+
+///SKILLS
+//colors
+$color_ebb_approx: #e9e5e2;
+$white: #fff;
+$barBg: #cdcdcd;
+$barBG: rgba(17, 17, 17, .3);
+$html: #eba08a;
+$css: #7de9de;
+$jQuery: #f5d2aa;
+$js: #ebcba8;
+$bootstrap: #f8c4c1;
+$sass: #a9f7b7;
+$redux: #e9b1fa;
+$react: #f1f58d;
+$firebase: #a0b3ff;
+$git: #84daf1;
+$trello: #fab647;
+
+///en kills % 
+$Shtml: 95%;
+$Scss: 70%;
+$SjQuery: 75%;
+$Sjs: 80%;
+$Sbootstrap: 75%;
+$Ssass: 50%;
+$Sredux: 60%;
+$Sreact: 70%;
+$Sfirebase: 50%;
+$Sgit: 90%;
+$Strello: 90%;

@@ -1,0 +1,36 @@
+//Contact me
+.contact-me{
+    color: $light;
+    font-family: $font_Quick;
+    width: 100%;
+    font-size: 1.4em;
+    position: relative;
+    height: 500px;
+    height: 600px;
+    @extend .form-v;
+    background: $principal;
+    &:after, &:before{
+        background: $principal;
+    }
+}
+
+.contactMe{
+
+    display: flex;
+    flex-direction: column;
+    text-align: left
+}
+
+.img-contact{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 35%;
+    // border-top: 
+}
+
+
+.contact-me .title-parts{
+    position: absolute;
+    top: 0;
+}

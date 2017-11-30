@@ -1,11 +1,53 @@
 @import '_variables';
+@import '_mixin';
+@import '_home';
+@import '_about';
+@import '_skills';
+@import '_portfolio';
+@import '_contact';
 
-body{
-    box-sizing: border-box;
-    font-family: $fontTitle;
-    background-image: url(../girl-tech.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+body {
+    background-color: rgba(#0bbd99, .5);
+    @include respond-to($mobileMin) {
+        background-color: rgba(#f5e14b, .5);
+    }  
+    @include respond-to($laptopMin) {
+        background-color: rgba(#e47874, .5);
+    }
+    @include respond-to($tabletMin) {
+        background-color: rgba(#2ebccc, .5);
+    }
+    @include respond-to($desktopMin) {
+        background-color: rgba(#2ecc2e, .5);
+    }
+    @include respond-to($fullHd) {
+        background-color: rgba(#9391f1, .5);
+    }  
 }
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.row{
+    margin: 0;
+}
+
+h1.title-parts{
+    margin: 0;
+}
+
+.title-parts{
+    background: url(../images/ale/splash.png);
+    background-size: cover;
+    // background-position-x:
+    color: white;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    padding: 50px 60px;
+}
