@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import girl from '../images/ale/girlcode2.png';
 import { Row, Col } from 'react-bootstrap';
-import me1 from '../images/ale/IMG1.JPG';
 import me2 from '../images/ale/ale.gif';
 
 const About = ({ ale }) => {
