@@ -21,7 +21,7 @@ const Skills = ({ ale }) => {
       <div className='skill' key={index}>
       <img className='img-skill' src={img[index]} />
       <div className="SkillBar">
-        <div id={id}>
+        <div id={id[index]}>
           <span className="Skill-Area ">{skill}</span>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'redux-zero/react';
 import { Row, Col } from 'react-bootstrap';
-import aleContact from '../images/ale/ale_3.png'
+import aleContact from '../images/ale/girlcode5.png'
 
 const Contact = ({ ale }) => {
   return (
