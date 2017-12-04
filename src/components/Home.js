@@ -15,8 +15,8 @@ const Home = ({ ale }) => {
               </div>
             </div>
             <br />
-            <button><i className="fa fa-chevron-down meet-me" aria-hidden="true"></i></button>
           </div>
+          <button className='meet-me'><i className="fa fa-chevron-down meet-me-icon" aria-hidden="true"></i></button>
         </div>
     );
   }

@@ -47,12 +47,13 @@ $font_Ubuntu: Ubuntu ;
 
 //MEDIA-QUERIES
 $fullHd: "min-width: 1400px";
-$desktopMin: "min-width: 1200px";
 $desktopMax: "max-width: 1399px";
-$laptopMin: "min-width:992px";
-$laptopMax: "max-width:1199px";
+$desktopMin: "min-width: 1200px";
+$laptopMax: "max-width: 1199px";
+$laptopMin: "min-width: 992px";
+$tabletMax: "max-width: 991px";
 $tabletMin: "min-width: 768px";
-$mobileMax: "max-width: 768px";
+$mobileMax: "max-width: 767px";
 $mobileMin: "min-width: 240px";
 
 ///SKILLS
