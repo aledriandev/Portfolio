@@ -1,9 +1,9 @@
 .about-me{
     height: 120vh;
     position: relative;
-    // @include respond-to($mobileMax) {        
-    //     height: 800px;
-    // }
+    @include respond-to($mobileMax) {        
+        font-size: 80%;
+    }
 }
 
 .form-v{
@@ -52,10 +52,11 @@
 .two{
 	width: 80%;
 	border: 5px solid white;
-    @include respond-to($mobileMax) {        
+    @include respond-to($tabletMax) {        
         margin-top: 220px;
         right: 20px;
         width: 50%;
+        display: none;
     }
 }
 
