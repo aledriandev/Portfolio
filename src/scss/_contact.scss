@@ -7,6 +7,7 @@
     position: relative;
     height: 500px;
     height: 600px;
+    
     @extend .form-v;
     background: $principal;
     &:after, &:before{
@@ -33,4 +34,150 @@
 .contact-me .title-parts{
     position: absolute;
     top: 0;
+}
+
+///
+/* Color Variables */
+$color-codepen: #000;
+$color-github: $gray;
+$color-twitter: #2b97f1;
+$color-dribbble: #ef5a92;
+$color-instagram:$gray;
+$color-linkedin: $gray;
+$color-facebook: #3b5a9b;
+
+$color-codepen-1: #000;
+$color-github-1: #434444;
+$color-twitter-1: #2b97f1;
+$color-dribbble-1: #ef5a92;
+$color-instagram-1: #ee9cff;
+$color-linkedin-1: #006599;
+$color-facebook-1: #3b5a9b;
+/* Social Icon Mixin */
+@mixin social-icon($color) {
+  background: $color;
+  background: linear-gradient(tint($color, 5%), shade($color, 5%));
+  border-bottom: 1px solid shade($color, 20%);
+  color: tint($color, 50%);
+
+  &:hover {
+    color: tint($color, 80%);
+    text-shadow: 0px 1px 0px shade($color, 20%);
+  }
+
+  .tooltip {
+    background: $color;
+    background: linear-gradient(tint($color, 15%), $color);
+    color: tint($color, 80%);
+
+    &:after {
+      border-top-color: $color;
+    }
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: #fff;
+
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, -150%);
+    }
+  }
+    
+  &:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+  }
+  
+  &--linkedin { @include social-icon($color-linkedin); }
+  &--twitter { @include social-icon($color-twitter); }
+  &--codepen { @include social-icon($color-codepen); }
+  &--facebook { @include social-icon($color-facebook); }
+  &--instagram { @include social-icon($color-instagram); }
+  &--dribbble { @include social-icon($color-dribbble); }
+  &--github { @include social-icon($color-github); }
+  
+  i {
+    position: relative;
+    top: 1px;
+  }
+}
+
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+  
+  &:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+  }
+}
+a {
+    color: rgba(235, 232, 232, 0.487);
+}
+a:hover {
+    text-decoration-line: none;
+}
+
+.form-control{
+    background-color: #b9293c;
+    border: 1px solid #a90218;
+    color: white;
+}
+
+.form-control:focus{
+    border: none;
+    outline: 0px;
+}
+
+.btnSend{
+    background-color: $gray;
+    color: white;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 3px;
+    float: right;
 }

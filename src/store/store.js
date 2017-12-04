@@ -18,7 +18,10 @@ const student = {
   englishLevel: 'Básico',
   social: {
       linkedin: 'https://www.linkedin.com/in/alejandraadrian/',
-
+      github: 'https://github.com/alejandraAdrian',
+      correo: 'alejandraadrianteada@gmail.com',
+      whatsapp: '996536337',
+      instagram: 'https://www.instagram.com/alejandratat/',
   },
   works: [{
           name: 'Trello',
