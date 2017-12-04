@@ -8,19 +8,19 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 
-const App = ({ ale }) => {
+const App = ({ student }) => {
   return (
     <div>
-      <Home className='container' ale={ale}/>
-      <About className='container' ale={ale}/>
-      <Skills className='container' ale={ale}/>
-      <Portfolio className='container' ale={ale}/>
-      <Contact className='container' ale={ale}/>
+      <Home className='container' ale={student}/>
+      <About className='container' ale={student}/>
+      <Skills className='container' ale={student}/>
+      <Portfolio className='container' ale={student}/>
+      <Contact className='container' ale={student}/>
     </div>
   );
 }
 
 
 
-const mapToProps=({ale})=>({ale});
+const mapToProps=({student})=>({student});
 export default connect(mapToProps)(App);

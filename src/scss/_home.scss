@@ -2,19 +2,20 @@
 
 .myself{
     width: 100%;
-    background: url(../images/ale/ale81.png) no-repeat center center;
+    background: url(../images/ale/ale6.png) no-repeat center center;
     background-size: cover;
+    background-position-y: -10px;
     display: flex;
     flex-direction: column;
     height: 100vh;
     position: relative;
-    color: $gray;
+    color: $white;
     margin: 0;
 }
 
 .whoIam{
 	padding-top: 22vh;
-    width: 90%;
+    width: 40%;
     margin: 0;
     padding-left: 5%; 
     text-align: left;
@@ -49,7 +50,7 @@
 
 .whatIdo {
 	font-family: $font_Raleway;
-	color: $letter_tag;
+	color: $white;
 	position: relative;
 	left: 2%;
 }
@@ -58,8 +59,18 @@
     position: relative;
     h2{
         margin-top: 0;
-        color: $principal2;
+        color: $white;
     }
+}
+
+.container-home{
+    background: $grayOpacity;
+    padding: 20px 10px;
+	margin: 70px 80px;
+	color: $white;
+	border: 2px groove $white;
+	border-radius: 5px;
+    box-shadow: 0 0 0 4px $grayOpacity;
 }
 
 .meet-me {
@@ -86,3 +97,4 @@
     //   box-shadow: 0.2vw 0.2vw 0 $principal2_dif;
     }
 }
+

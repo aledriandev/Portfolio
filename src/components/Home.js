@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 const Home = ({ ale }) => {
-    const dev = "<Fron End Junior />"
+    const dev = "<Front End Junior />"
     return (
         <div className='myself text-center'>
-          <div className='whoIam text-left'>
+          <div className='whoIam text-left container-home'>
             <h1>¡Hola!</h1><h1>Soy {ale.name}</h1>
             <br />
             <br />

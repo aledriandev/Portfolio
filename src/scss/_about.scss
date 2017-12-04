@@ -1,7 +1,5 @@
-
-//ABOUT ME
 .about-me{
-    height: 100vh;
+    height: 120vh;
     position: relative;
     // @include respond-to($mobileMax) {        
     //     height: 800px;
@@ -39,7 +37,6 @@
 
 .skills{
     height: 100px;
-    // top: -35px;
     padding-top: 1%; 
     @extend .form-v;
     background: $principal;
@@ -47,37 +44,16 @@
         background: $principal;
     }
 }
-
-.girl-code{
-    width: 50%;
-    position: absolute;
-    bottom: 5px;
-    left:18%;
-
-}
-
 .photo-me{
-    width: 70%;
-    display:  block;
-	position: relative;
-	top: 20%;
-	padding-top: 20%;
-	
-}
-
-.one{
-	margin-top: 5px;
-    @include respond-to($mobileMax) {        
-		display: none;
-    }
+    width: 100%;
+    text-align: right;
 }
 
 .two{
-	width: 100%;
+	width: 80%;
 	border: 5px solid white;
     @include respond-to($mobileMax) {        
         margin-top: 220px;
-        position: absolute;
         right: 20px;
         width: 50%;
     }
@@ -89,5 +65,59 @@
     width: 100%;
     font-size: 1.4em;
     position: relative;
-    top: 150px;
+    text-align: justify;
 }
+
+.content-about{
+    position: relative;
+    top: 60px;
+    z-index: 5;
+}
+
+.pins{
+    margin-top: 50px;
+    position: relative;
+}
+
+.pin{
+    width: 90%;
+    position: relative;
+}
+
+.back-pin{
+    position: relative;
+    &:hover{
+        .span-pin{
+            opacity: 1;
+            transition: all .5s ease-in-out;
+        }
+        .pin{
+            opacity: 0.2;
+        }
+    }
+}
+
+.span-pin{
+    position: absolute;
+    
+    transition: all .5s ease-in-out;
+
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: $whiteOpacity;
+    color: black;
+    // line-height: 50%;
+    border-radius: 50%;
+    display: none;
+    z-index: 19;
+    text-align: center;
+    // vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+

@@ -5,19 +5,21 @@ import youtube from '../images/projects/youtube.png';
 import buscaminas from '../images/projects/buscaminas.png';
 import memory from '../images/projects/memory.png';
 import reserva from '../images/projects/reserva.png';
+import fiveBest from '../images/pin/5mejores2.png'
+import bestSquad from '../images/pin/mejorSquad.png'
+import rocking from '../images/pin/rocking.png'
 
-
-const ale = {
-  id: '10/26/2017 10:29:16',
+const student = {
   nameComplete: 'Thalia Alejandra Adrian Tejada',
   name: 'Alejandra',
   campus: 'Arequipa',
   code: 'aqp20171679',
-  bio: 'Soy Front end web developer Jr. e ingeniera química de profesión. Al descubrir mi pasión por la tecnología decidí emprender un nuevo camino y estudiar en Laboratoria, donde potencie mi talento y aprendí a programar; viviendo así todos los días mi pasión.',
+  bio: 'Soy una agile, Front End Developer Junior e Ingeniera Quimica. Mi fascinación por la tecnología me llevó a estudiar en Laboratoria. Allí descubrí mi talento y pasión por la programación, aprendí a desarrollar páginas web de forma individual y colaborativa, teniendo una evolución constante, técnica y personalmente. Muestro en cada trabajo que hago mi capacidad para adaptarme a cualquier situación, superándome a mí misma y mis limitaciones. Me visualizo en el futuro como una Full Stack Developer.',
   englishLevel: 'Básico',
-  linkedin:
-     'https://www.linkedin.com/in/alejandra-adrian-tejada-698562111/',
-  portfolio: '',
+  social: {
+      linkedin: 'https://www.linkedin.com/in/alejandraadrian/',
+
+  },
   works: [{
           name: 'Trello',
           demo: 'https://alejandraadrian.github.io/Trello-firebase',
@@ -62,8 +64,8 @@ const ale = {
       },
   ],
   github: 'alejandraadrian@github.io',
-  photo:' alejandra',
-  badges: '',
+  badges: [bestSquad, fiveBest, rocking],
+  badgesD: ['Trabajo en equipo', 'Top 5 en Ranking', 'Romper esquemas'],
   html:
      '[https://aqp20171679.github.io/trello-laboratoria/ ,\nhttps://aqp20171679.github.io/Proyecto-Final-Sprint-1/,\nhttps://aqp20171679.github.io/memorize-maze/,\nhttps://aqp20171679.github.io/DOM2-Caballos/,\nhttps://aqp20171679.github.io/Maze-Event/ ]',
   jquery:
@@ -74,12 +76,10 @@ const ale = {
      '[ https://aqp20171679.github.io/Trivia-Redux/ ,   https://aqp20171679.github.io/Yape--Sprint-5/, https://github.com/aqp20171679/Proyecto-Lyft,\nhttps://aqp20171679.github.io/Routing-React-DOM/,\nhttps://aqp20171679.github.io/Reserva-aerolinea/ ]',
   education: 'Ingenieria Quimica - Universidad Nacional de San Aguistin',
   workExperience: '',
-  testimonials: '',
-  resume: ''
 }
 
 const initialState = {
-   ale: ale
+    student: student
 };
 
 const store = createStore (initialState);
