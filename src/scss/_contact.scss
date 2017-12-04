@@ -5,8 +5,7 @@
     width: 100%;
     font-size: 1.4em;
     position: relative;
-    height: 500px;
-    height: 600px;
+    height: 700px;
     
     @extend .form-v;
     background: $principal;
@@ -19,7 +18,8 @@
 
     display: flex;
     flex-direction: column;
-    text-align: left
+    text-align: left;
+    padding-top: 150px;
 }
 
 .img-contact{
@@ -31,10 +31,10 @@
 }
 
 
-.contact-me .title-parts{
-    position: absolute;
-    top: 0;
-}
+// .contact-me .title-parts{
+//     position: absolute;
+//     top: 0;
+// }
 
 ///
 /* Color Variables */
@@ -169,7 +169,8 @@ a:hover {
 }
 
 .form-control:focus{
-    border: none;
+    border: 0px;
+    background: transparent;
     outline: 0px;
 }
 

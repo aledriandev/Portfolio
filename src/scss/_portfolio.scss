@@ -11,14 +11,13 @@
         height: 1500px;
     }
     @include respond-to($laptopMin) {
-        height: 680px;
+        height: 880px;
     }
 }
 
 .portfolio-container{
     width: auto;
-    justify-content: center;
-    text-align: center;
+    // justify-content: center;
 }
 
 .view {
@@ -145,8 +144,3 @@
     transform: scale(1);
     opacity: 1;
   }
-
-
-.portfolio .title-parts{
-    top: 80px;
-}

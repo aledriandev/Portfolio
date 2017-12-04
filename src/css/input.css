@@ -372,19 +372,6 @@
 .skills-end .title-parts {
   left: 100px; }
 
-.portfolio .title-parts {
-  top: 80px; }
-
-.contact-me-data {
-  width: 90%;
-  position: absolute;
-  top: 150px;
-  right: 5%; }
-
-.contact-me .title-parts {
-  top: 80px;
-  right: 5%; }
-
 .portfolio {
   background: #27231f;
   height: 900px;
@@ -397,12 +384,10 @@
       height: 1500px; } }
   @media only screen and (min-width: 992px) {
     .portfolio {
-      height: 680px; } }
+      height: 880px; } }
 
 .portfolio-container {
-  width: auto;
-  justify-content: center;
-  text-align: center; }
+  width: auto; }
 
 .view {
   float: left;
@@ -508,17 +493,13 @@
   transform: scale(1);
   opacity: 1; }
 
-.portfolio .title-parts {
-  top: 80px; }
-
 .contact-me {
   color: #FAFAFA;
   font-family: Quicksand;
   width: 100%;
   font-size: 1.4em;
   position: relative;
-  height: 500px;
-  height: 600px;
+  height: 700px;
   background: #b31328; }
   .contact-me:after, .contact-me:before {
     background: #b31328; }
@@ -526,17 +507,14 @@
 .contactMe {
   display: flex;
   flex-direction: column;
-  text-align: left; }
+  text-align: left;
+  padding-top: 150px; }
 
 .img-contact {
   position: absolute;
   left: 0px;
   bottom: 0px;
   width: 100%; }
-
-.contact-me .title-parts {
-  position: absolute;
-  top: 0; }
 
 /* Color Variables */
 /* Social Icon Mixin */
@@ -709,7 +687,8 @@ a:hover {
   color: white; }
 
 .form-control:focus {
-  border: none;
+  border: 0px;
+  background: transparent;
   outline: 0px; }
 
 .btnSend {
