@@ -245,8 +245,8 @@
   position: relative;
   left: 20%;
   margin-bottom: 30px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: #27231f;
   z-index: 10; }
@@ -256,8 +256,8 @@
  * ------------------------------------- */
 .progress-radial .overlay {
   position: absolute;
-  width: 160px;
-  height: 160px;
+  width: 110px;
+  height: 110px;
   background-color: #b31328;
   border-radius: 50%;
   margin-left: 20px;
@@ -266,7 +266,7 @@
   line-height: 60px;
   font-size: 16px;
   z-index: 10;
-  padding: 30px; }
+  padding: 20px; }
 
 /* -------------------------------------
  * Mixin for progress-% class

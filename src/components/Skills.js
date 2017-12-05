@@ -26,7 +26,7 @@ const Skills = ({ ale }) => {
   const mySkills = name.map((skill,index) =>{
     console.log('class','progress-radial progress-'+prcent[index])
     return(
-      <Col md={3} className='text-center skill-progress'>
+      <Col md={2} className='text-center skill-progress'>
         <div className={'progress-radial progress-'+prcent[index]} key={index}>
           <div className="overlay">
             <img className='img-skill' src={img[index]} />
