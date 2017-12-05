@@ -14,8 +14,8 @@ const student = {
   name: 'Alejandra',
   campus: 'Arequipa',
   code: 'aqp20171679',
-  bio: 'Soy una agile, Front End Developer Junior e Ingeniera Quimica. Mi fascinación por la tecnología me llevó a estudiar en Laboratoria. Allí descubrí mi talento y pasión por la programación, aprendí a desarrollar páginas web de forma individual y colaborativa, teniendo una evolución constante, técnica y personalmente. Muestro en cada trabajo que hago mi capacidad para adaptarme a cualquier situación, superándome a mí misma y mis limitaciones. Me visualizo en el futuro como una Full Stack Developer.',
-  englishLevel: 'Básico',
+  englishLevel: 'Básico',bio: 'Soy una agile, Front End Developer Junior e Ingeniera Quimica. Mi fascinación por la tecnología me llevó a estudiar en Laboratoria. Allí descubrí mi talento y pasión por la programación, aprendí a desarrollar páginas web de forma individual y colaborativa, teniendo una evolución constante, técnica y personal. Muestro en cada trabajo que hago mi capacidad para adaptarme a cualquier situación, superándome a mí misma y mis limitaciones. Me visualizo en el futuro como una Full Stack Developer.',
+  
   social: {
       linkedin: 'https://www.linkedin.com/in/alejandraadrian/',
       github: 'https://github.com/alejandraAdrian',
