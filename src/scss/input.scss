@@ -50,3 +50,14 @@ h1.title-parts{
     z-index: 2;
     font-family: $font_Quick;
 }
+
+.container-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class*="col-"] {
+    z-index: 10;
+}

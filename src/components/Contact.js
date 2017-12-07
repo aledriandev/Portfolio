@@ -7,18 +7,18 @@ const Contact = ({ ale }) => {
   const social = () => {
     return (
       <div className="social-icons">
-        <a className="social-icon social-icon--linkedin" href={ale.social.linkedin}>
+        <a className="social-icon social-icon--linkedin" target='_blank' href={ale.social.linkedin}>
           <i className="fa fa-linkedin fa-2x"></i>
           <div className="tooltip">LinkedIn</div>
         </a>
-        <a className="social-icon social-icon--github" href={ale.social.github}> 
+        <a className="social-icon social-icon--github" target='_blank' href={ale.social.github}> 
           <i className="fa fa-github fa-2x"></i>
           <div className="tooltip">Github</div>
         </a>
-        <a className="social-icon social-icon--instagram" href={ale.social.instagram}>
+        {/* <a className="social-icon social-icon--instagram" href={ale.social.instagram}>
           <i className="fa fa-instagram fa-2x"></i>
           <div className="tooltip">Instagram</div>
-        </a>
+        </a> */}
       </div>
     )
   }

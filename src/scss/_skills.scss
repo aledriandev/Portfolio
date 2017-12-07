@@ -49,9 +49,7 @@ $backColor: rgb(175, 175, 175);
 
 .wrap{
   width: 100%;
-  margin: 0 ;
-  
-  
+  margin: 0 ;  
 }
 /* -------------------------------------
  * Bar container
@@ -60,8 +58,8 @@ $backColor: rgb(175, 175, 175);
   position: relative;
   left: 20%;
   margin-bottom: 30px;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 //   border: 2px solid $backColor ;// remove gradient color
   background-color: $barColor;
@@ -77,13 +75,13 @@ $backColor: rgb(175, 175, 175);
   height: 110px;
   background-color: $overlayColor;
   border-radius: 50%;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
   text-align: center;
   line-height: 60px;
   font-size: 16px;
   z-index: 10;
-  padding: 20px;
+  padding: 18px;
 }
   
 /* -------------------------------------
@@ -132,6 +130,12 @@ $half: round($loops / 2);
     
 }
 
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .skill{
     width: 33%;
     height: 160px;
@@ -176,6 +180,10 @@ $half: round($loops / 2);
 	font-size: 18px;
 }
 
+.img-tool{
+    width: 80%;
+    z-index: 11;
+}
 
 // #Skill-HTML {
 // 	width: $Shtml;
