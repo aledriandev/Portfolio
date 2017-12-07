@@ -15,10 +15,20 @@ const Contact = ({ ale }) => {
           <i className="fa fa-github fa-2x"></i>
           <div className="tooltip">Github</div>
         </a>
-        {/* <a className="social-icon social-icon--instagram" href={ale.social.instagram}>
+        {/* <a className="social-icon social-icon--instagram" href=''>
           <i className="fa fa-instagram fa-2x"></i>
           <div className="tooltip">Instagram</div>
         </a> */}
+
+        {/* <a className="social-icon social-icon--instagram" href=''>
+          <i className="fa fa-envelope fa-2x"></i>
+          <div className="tooltip">alejandraadriantejada@gmail.com</div>
+        </a> */}
+
+        <a className="social-icon social-icon--instagram" href=''>
+          <i className="fa fa-mobile fa-2x"></i>
+          <div className="tooltip">996536337</div>
+        </a>
       </div>
     )
   }

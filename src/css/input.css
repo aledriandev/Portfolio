@@ -691,20 +691,6 @@
       color: tint(#27231f, 80%); }
       .social-icon--instagram .tooltip:after {
         border-top-color: #27231f; }
-  .social-icon--dribbble {
-    background: #ef5a92;
-    background: linear-gradient(tint(#ef5a92, 5%), shade(#ef5a92, 5%));
-    border-bottom: 1px solid shade(#ef5a92, 20%);
-    color: tint(#ef5a92, 50%); }
-    .social-icon--dribbble:hover {
-      color: tint(#ef5a92, 80%);
-      text-shadow: 0px 1px 0px shade(#ef5a92, 20%); }
-    .social-icon--dribbble .tooltip {
-      background: #ef5a92;
-      background: linear-gradient(tint(#ef5a92, 15%), #ef5a92);
-      color: tint(#ef5a92, 80%); }
-      .social-icon--dribbble .tooltip:after {
-        border-top-color: #ef5a92; }
   .social-icon--github {
     background: #27231f;
     background: linear-gradient(tint(#27231f, 5%), shade(#27231f, 5%));
@@ -718,6 +704,34 @@
       background: linear-gradient(tint(#27231f, 15%), #27231f);
       color: tint(#27231f, 80%); }
       .social-icon--github .tooltip:after {
+        border-top-color: #27231f; }
+  .social-icon--phone {
+    background: #27231f;
+    background: linear-gradient(tint(#27231f, 5%), shade(#27231f, 5%));
+    border-bottom: 1px solid shade(#27231f, 20%);
+    color: tint(#27231f, 50%); }
+    .social-icon--phone:hover {
+      color: tint(#27231f, 80%);
+      text-shadow: 0px 1px 0px shade(#27231f, 20%); }
+    .social-icon--phone .tooltip {
+      background: #27231f;
+      background: linear-gradient(tint(#27231f, 15%), #27231f);
+      color: tint(#27231f, 80%); }
+      .social-icon--phone .tooltip:after {
+        border-top-color: #27231f; }
+  .social-icon--email {
+    background: #27231f;
+    background: linear-gradient(tint(#27231f, 5%), shade(#27231f, 5%));
+    border-bottom: 1px solid shade(#27231f, 20%);
+    color: tint(#27231f, 50%); }
+    .social-icon--email:hover {
+      color: tint(#27231f, 80%);
+      text-shadow: 0px 1px 0px shade(#27231f, 20%); }
+    .social-icon--email .tooltip {
+      background: #27231f;
+      background: linear-gradient(tint(#27231f, 15%), #27231f);
+      color: tint(#27231f, 80%); }
+      .social-icon--email .tooltip:after {
         border-top-color: #27231f; }
   .social-icon i {
     position: relative;

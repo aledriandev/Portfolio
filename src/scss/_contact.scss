@@ -41,9 +41,10 @@
 $color-codepen: #000;
 $color-github: $gray;
 $color-twitter: #2b97f1;
-$color-dribbble: #ef5a92;
+$color-phone: $gray;
 $color-instagram:$gray;
 $color-linkedin: $gray;
+$color-email: $gray;
 $color-facebook: #3b5a9b;
 
 $color-codepen-1: #000;
@@ -115,8 +116,10 @@ $color-facebook-1: #3b5a9b;
   &--codepen { @include social-icon($color-codepen); }
   &--facebook { @include social-icon($color-facebook); }
   &--instagram { @include social-icon($color-instagram); }
-  &--dribbble { @include social-icon($color-dribbble); }
+  // &--dribbble { @include social-icon($color-dribbble); }
   &--github { @include social-icon($color-github); }
+  &--phone { @include social-icon($color-phone); }
+  &--email { @include social-icon($color-email); }
   
   i {
     position: relative;

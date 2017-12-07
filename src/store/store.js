@@ -51,41 +51,41 @@ const student = {
           description: '¿Laptop? ¿Tablet? ¿Mobil?',
           src: adapta
       },
-      {
-          name: 'Tener la cultura Agile',
-          description: '¿Laptop? ¿Tablet? ¿Mobil?',
-          src: agil
-      },
+    //   {
+    //       name: 'Tener la cultura Agile',
+    //       description: '¿Laptop? ¿Tablet? ¿Mobil?',
+    //       src: agil
+    //   },
       {
           name: 'Ser autodidacta',
           description: '¿Laptop? ¿Tablet? ¿Mobil?',
           src: autodidact
       },
-      {
-          name: 'Comunicacion constante',
-          description: '¿Laptop? ¿Tablet? ¿Mobil?',
-          src: comunica
-      },
+    //   {
+    //       name: 'Comunicacion constante',
+    //       description: '¿Laptop? ¿Tablet? ¿Mobil?',
+    //       src: comunica
+    //   },
       {
           name: 'Muy creativa',
           description: '¿Laptop? ¿Tablet? ¿Mobil?',
           src: creative
       },
-      {
-          name: 'Proactiva',
-          description: '¿Laptop? ¿Tablet? ¿Mobil?',
-          src: proact
-      },
-      {
-          name: 'Trabajo en equipo',
-          description: '¿Laptop? ¿Tablet? ¿Mobil?',
-          src: teamw
-      },
-      {
-          name: 'Resiliencia',
-          description: '¿Laptop? ¿Tablet? ¿Mobil?',
-          src: resilien
-      },
+    //   {
+    //       name: 'Proactiva',
+    //       description: '¿Laptop? ¿Tablet? ¿Mobil?',
+    //       src: proact
+    //   },
+    //   {
+    //       name: 'Trabajo en equipo',
+    //       description: '¿Laptop? ¿Tablet? ¿Mobil?',
+    //       src: teamw
+    //   },
+    //   {
+    //       name: 'Resiliencia',
+    //       description: '¿Laptop? ¿Tablet? ¿Mobil?',
+    //       src: resilien
+    //   },
   ],
   works: [{
           name: 'Trello',
