@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'redux-zero/react';
 import { Row, Col } from 'react-bootstrap';
 import aleContact from '../images/ale/girlcode5.png'
+import {addMessage} from '../actions/actions'
 
 const Contact = ({ ale }) => {
   const social = () => {
@@ -42,22 +43,36 @@ const Contact = ({ ale }) => {
             <h3>Si estas interesado en contactarme:</h3>
             {social()}
             <h4>Déjame un mensaje: </h4>
-            <form className="formContact" onSubmit={(e)=>e.preventDefault()}>
+            <form className="formContact" onSubmit={(e)=>{
+              e.preventDefault();
+              addMessage(this.email.value,this.subject.value,this.message.value);
+              this.email.value='';
+              this.subject.value='';
+              this.message.value=''
+              }}>
               <div className="form-group">
                 <input
                   type="email"
+                  required
                   className="form-control"
                   id="exampleInputEmail1"
-                  placeholder="Correo" />
+                  placeholder="Correo" 
+                  ref={ref => { this.email = ref }}
+                  />
+              
               </div>
               <div className="form-group">
                 <input
                   type="text"
+                  required
                   className="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Asunto" />
+                  id="exampleInputSubject"
+                  placeholder="Asunto" 
+                  ref={ref => { this.subject = ref }}
+                  />
+                  
               </div>
-              <textarea className="form-control" rows="3" placeholder="Mensaje"></textarea>
+              <textarea className="form-control" rows="3" placeholder="Mensaje" required ref={ref => { this.message = ref }}></textarea>
               <button type="submit" className="btnSend">Enviar</button>
             </form>
           </div>
