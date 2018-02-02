@@ -27,7 +27,7 @@ const student = {
   code: 'aqp20171679',
   bio: 'Soy agile, Front End Developer Junior e Ingeniera Química. Mi fascinación por la tecnología me llevó a estudiar en Laboratoria, donde descubrí mi talento y pasión por la programación, aprendí a desarrollar paginas web de forma individual y colaborativa. Busco retarme día a día con nuevas experiencias que me lleven a superarme a mí misma.',
   englishLevel: 'Básico',
-  cv: 'https://drive.google.com/file/d/1sCWynwU1djgjoa00O1Wbx52TG4d6cSLy/view?usp=sharing',
+  cv: 'https://drive.google.com/file/d/14tI7-C2jkF53G5ad07SjI9dS42O9daGj/view?usp=sharing',
   social: {
       linkedin: 'https://www.linkedin.com/in/alejandraadrian/',
       github: 'https://github.com/alejandraAdrian',

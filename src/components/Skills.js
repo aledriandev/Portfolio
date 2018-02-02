@@ -42,7 +42,7 @@ const Skills = ({ ale }) => {
 
   const myHerramientas = imgTools.map((img,index) =>{
     return(
-      <Col md={2}>
+      <Col md={2} lg={2} xs={4} sm={4}>
         <div key={index}>
             <img className='img-tool' src={img} />
         </div>
@@ -52,7 +52,7 @@ const Skills = ({ ale }) => {
 
   const myPins = ale.badges.map((pin, index) => {
     return (
-      <Col md={2} sm={4} xs={4}>
+      <Col md={2} sm={3} xs={4}>
         <div className='back-pin'>
           <img className='pin' src={pin} />
           <div className='span-pin'><b>{ale.badgesD[index]}</b></div>
@@ -61,8 +61,7 @@ const Skills = ({ ale }) => {
   })
 
   return (
-    <div>
-      <div className='skills form-v'></div>
+    <div id='skills'>
       <div className='skills-end form-v'>
         <Row className="wrap">
           <Col mdOffset={1} md={10}>
@@ -72,9 +71,6 @@ const Skills = ({ ale }) => {
               {mySkills}
             </Row>
           </Col>
-          <br />
-            <hr className="dashed" />
-          <br />
           <Col mdOffset={1} md={10}>
             <h1 className='title-parts'>HERRAMIENTAS</h1>
             <br/>
@@ -83,7 +79,7 @@ const Skills = ({ ale }) => {
             </Row>
             <br />
           </Col>
-          <Col mdOffset={1} md={10}>
+          <Col mdOffset={1} md={10} className='reconocimientos'>
             <h1 className='title-parts'>RECONOCIMIENTOS</h1>
             <br/>
             <Row className='skills-container'>

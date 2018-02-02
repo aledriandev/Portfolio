@@ -15,7 +15,7 @@ const About = ({ ale }) => {
   })
 
   return (
-    <div className='about-me form-v'>
+    <div id='about' className='about-me form-v'>
       <Row className='content-about'>
         <div className='my-bio'>
           <Col mdOffset={1}>
@@ -29,8 +29,6 @@ const About = ({ ale }) => {
               {ale.bio}
               <br />
               <br />
-              {/* <div className='pins'>{pins}</div> */}
-
               <button className='btnDownCv'><a target='_blank' href={ale.cv}> <i className="fa fa-download" aria-hidden="true"></i> Revisa mi CV</a></button>
 
             </div>

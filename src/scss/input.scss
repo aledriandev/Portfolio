@@ -1,63 +1,141 @@
-@import '_variables';
-@import '_mixin';
-@import '_home';
-@import '_about';
-@import '_skills';
-@import '_portfolio';
-@import '_contact';
+    @import '_variables';
+    @import '_mixin';
+    @import '_home';
+    @import '_about';
+    @import '_skills';
+    @import '_portfolio';
+    @import '_contact';
 
-// body {
-//     background-color: rgba(#0bbd99, .5);
-//     @include respond-to($mobileMin) {
-//         background-color: rgba(#f5e14b, .5);
-//     }  
-//     @include respond-to($laptopMin) {
-//         background-color: rgba(#e47874, .5);
-//     }
-//     @include respond-to($tabletMin) {
-//         background-color: rgba(#2ebccc, .5);
-//     }
-//     @include respond-to($desktopMin) {
-//         background-color: rgba(#2ecc2e, .5);
-//     }
-//     @include respond-to($fullHd) {
-//         background-color: rgba(#9391f1, .5);
-//     }  
-// }
+    // body {
+    //     background-color: rgba(#0bbd99, .5);
+    //     @include respond-to($mobileMin) {
+    //         background-color: rgba(#f5e14b, .5);
+    //     }  
+    //     @include respond-to($laptopMin) {
+    //         background-color: rgba(#e47874, .5);
+    //     }
+    //     @include respond-to($tabletMin) {
+    //         background-color: rgba(#2ebccc, .5);
+    //     }
+    //     @include respond-to($desktopMin) {
+    //         background-color: rgba(#2ecc2e, .5);
+    //     }
+    //     @include respond-to($fullHd) {
+    //         background-color: rgba(#9391f1, .5);
+    //     }  
+    // }
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
 
-.row{
-    margin: 0;
-}
+    .row{
+        margin: 0;
+    }
 
-h1.title-parts{
-    margin: 0;
-}
+    h1.title-parts{
+        margin: 0;
+    }
 
-.title-parts{
-    // background: url(../images/ale/splash.png);
-    background-size: cover;
-    // background-position-x:
-    color: white;
+    .title-parts{
+        // background: url(../images/ale/splash.png);
+        background-size: cover;
+        // background-position-x:
+        color: white;
+        position: relative;
+        z-index: 2;
+        font-family: $font_Quick;
+    }
+
+    .container-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div[class*="col-"] {
+        z-index: 10;
+    }
+
+    //NAVBAR
+    nav#vertical-nav {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 20;
+    color: $navbar;
+    width: 20px;
+    height: 100px;
+        @include respond-to($fullHd) {        
+            top: 80%;
+        }
+        @include respond-to($desktopMin) {        
+            top: 50%;
+        }
+
+        @include respond-to($tabletMax) {        
+            top: 25%;
+            right: 2%;
+        }
+        @include respond-to($mobileMax) {        
+            top: 25%;
+            right: 2%;
+        }
+    }
+    nav#vertical-nav a {
+        color: $gray;
+        font-weight:bold;
+        font-family: $font_Raleway
+        // -webkit-text-fill-color: white;
+        // -webkit-text-stroke-color: $principal3;
+        // -webkit-text-stroke-width: 0.75px; 
+    }
+    nav#vertical-nav .nav-item {
+    width: 21px;
+    height: 21px;
+    margin-bottom: 12px;
+    }
+    nav#vertical-nav .nav-item .dot {
     position: relative;
-    z-index: 2;
-    font-family: $font_Quick;
-}
-
-.container-center{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-div[class*="col-"] {
-    z-index: 10;
-}
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $navbar;
+    // border: $principal3 solid 3px;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.2s;
+    transition: background-color 0.5s, -webkit-transform 0.2s;
+    transition: transform 0.2s, background-color 0.5s;
+    transition: transform 0.2s, background-color 0.5s, -webkit-transform 0.2s;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    cursor: pointer;
+    }
+    nav#vertical-nav .nav-item .dot:hover {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    }
+    nav#vertical-nav .nav-item .dot:hover span.dot-label {
+    opacity: 1;
+    }
+    nav#vertical-nav .nav-item .dot a {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    }
+    nav#vertical-nav .nav-item .dot span.dot-label {
+    position: absolute;
+    top: -5px;
+    right: 25px;
+    opacity: 0;
+    background: $navbar;
+    padding: 2px 5px;
+    border-radius: 5px 10px;
+    }

@@ -34,10 +34,10 @@ const Contact = ({ ale }) => {
     )
   }
   return (
-    <div>
+    <div id='contact'>
       <Row className='contact-me'>
         <img className='img-contact' src={aleContact} />
-        <Col mdOffset={6} md={6} xs={12} sm={8} className='contactMe'>
+        <Col mdOffset={6} smOffset={4} mdOffset={6} md={5} xs={12} sm={8} className='contactMe'>
           <h1 className='title-parts'>Contact Me</h1>
           <div className='contact-me-data'>
             <h3>Si estas interesado en contactarme:</h3>

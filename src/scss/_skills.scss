@@ -1,44 +1,39 @@
 @import '_mixin';
 
 .skills-end{
-    height: 850px;
+    height: auto;
     @extend .form-v;
     background: $principal;
-    @include respond-to($mobileMax) {
-        height: 1100px;
-    }
-    @include respond-to($laptopMin) {
-        height: 750px;
-    }
+    
     &:after, &:before{
         background: $principal;
     }
-    &:before{
-        bottom: -48px;
-        left: 0;
-        transform: skewY(-8deg);
-        height:950px;
-        z-index: 1;
-        @include respond-to($mobileMax) {
-            height: 1200px;
-        }
-        @include respond-to($laptopMin) {
-            height: 850px;
-        }
-    }
-    &:after{
-        height: 950px;
-        bottom: -48px;
-        z-index: 1;
-        right: 0;
-        transform: skewY(8deg);
-        @include respond-to($mobileMax) {
-            height: 1200px;
-        }
-        @include respond-to($laptopMin) {
-            height: 850px;
-        }
-    }
+    // &:before{
+    //     bottom: -48px;
+    //     left: 0;
+    //     transform: skewY(-8deg);
+    //     height:950px;
+    //     z-index: 1;
+    //     @include respond-to($mobileMax) {
+    //         height: 1200px;
+    //     }
+    //     @include respond-to($laptopMin) {
+    //         height: 850px;
+    //     }
+    // }
+    // &:after{
+    //     height: 950px;
+    //     bottom: -48px;
+    //     z-index: 1;
+    //     right: 0;
+    //     transform: skewY(8deg);
+    //     @include respond-to($mobileMax) {
+    //         height: 1200px;
+    //     }
+    //     @include respond-to($laptopMin) {
+    //         height: 850px;
+    //     }
+    // }
 }
 
 
@@ -49,7 +44,8 @@ $backColor: rgb(175, 175, 175);
 
 .wrap{
   width: 100%;
-  margin: 0 ;  
+  margin: 0 ;
+  margin-bottom: 50px;
 }
 /* -------------------------------------
  * Bar container
@@ -64,6 +60,14 @@ $backColor: rgb(175, 175, 175);
 //   border: 2px solid $backColor ;// remove gradient color
   background-color: $barColor;
   z-index: 10;
+    @include respond-to($tabletMax) {        
+        width: 110px;
+        height: 110px
+    }
+    @include respond-to($mobileMax) {        
+        width: 90px;
+        height: 90px
+    }
 } // default 100%
 
 /* -------------------------------------
@@ -73,6 +77,7 @@ $backColor: rgb(175, 175, 175);
   position: absolute;
   width: 110px;
   height: 110px;
+  
   background-color: $overlayColor;
   border-radius: 50%;
   margin-left: 15px;
@@ -82,6 +87,20 @@ $backColor: rgb(175, 175, 175);
   font-size: 16px;
   z-index: 10;
   padding: 18px;
+  @include respond-to($tabletMax) {        
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 12px;
+    }
+    @include respond-to($mobileMax) {        
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
 }
   
 /* -------------------------------------
@@ -120,7 +139,7 @@ $half: round($loops / 2);
 	padding: 30px;
 }
 .SkillBar {
-    width: 100%;
+    // width: 100%;
 	height: 25px;
 	position: relative;
 	background: $barBG;
@@ -134,11 +153,16 @@ $half: round($loops / 2);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
+}
+
+.reconocimientos{
+    margin-bottom: 100px;
 }
 
 .skill{
     width: 33%;
-    height: 160px;
+    // height: 160px;
     margin: 15px 0;
     float: left;
 	text-align: center;
@@ -184,6 +208,8 @@ $half: round($loops / 2);
     width: 80%;
     z-index: 11;
 }
+
+
 
 // #Skill-HTML {
 // 	width: $Shtml;
