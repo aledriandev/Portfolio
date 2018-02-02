@@ -632,6 +632,14 @@ figure.snip0058 figcaption p span {
   position: relative;
   left: 50%;
   width: 50%; }
+  @media (max-width: 991px) {
+    .icons {
+      width: 80%;
+      left: 20%; } }
+  @media (max-width: 767px) {
+    .icons {
+      left: 0;
+      width: 100%; } }
 
 .demo {
   position: relative;

@@ -244,6 +244,14 @@
       position: relative;
       left: 50%;
       width: 50%;
+      @include respond-to($tabletMax) {
+        width: 80%;
+        left: 20%;
+      }
+      @include respond-to($mobileMax) {
+          left: 0;
+          width: 100%;
+      }
     }
   .demo{
     position: relative;
